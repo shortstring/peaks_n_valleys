@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    text-align: -webkit-center;
+}
+
+.board {
+    width: 100vmin;
+    height: 90vmin;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    background: rgb(131, 247, 231);
+    background: -moz-radial-gradient(circle, rgba(131, 247, 231, 0.9752275910364145) 0%, rgba(181, 199, 79, 1) 50%, rgba(8, 164, 195, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(131, 247, 231, 0.9752275910364145) 0%, rgba(181, 199, 79, 1) 50%, rgba(8, 164, 195, 1) 100%);
+    background: radial-gradient(circle, rgba(131, 247, 231, 0.9752275910364145) 0%, rgba(181, 199, 79, 1) 50%, rgba(8, 164, 195, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#83f7e7", endColorstr="#08a4c3", GradientType=1);
+}
+
+body {
+    height: 97vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+}
+
+.terrain-top {
+    background: rgb(19, 255, 100);
+    background: -moz-linear-gradient(180deg, rgba(19, 255, 100, 1) 0%, rgba(62, 181, 119, 1) 4%, rgba(57, 161, 58, 1) 14%, rgba(57, 161, 58, 1) 18%, rgba(57, 161, 58, 1) 22%, rgba(58, 158, 59, 1) 28%, rgba(55, 161, 56, 1) 34%, rgba(181, 124, 32, 1) 48%, rgba(148, 103, 30, 1) 60%, rgba(145, 103, 34, 1) 69%, rgba(97, 67, 19, 1) 84%);
+    background: -webkit-linear-gradient(180deg, rgba(19, 255, 100, 1) 0%, rgba(62, 181, 119, 1) 4%, rgba(57, 161, 58, 1) 14%, rgba(57, 161, 58, 1) 18%, rgba(57, 161, 58, 1) 22%, rgba(58, 158, 59, 1) 28%, rgba(55, 161, 56, 1) 34%, rgba(181, 124, 32, 1) 48%, rgba(148, 103, 30, 1) 60%, rgba(145, 103, 34, 1) 69%, rgba(97, 67, 19, 1) 84%);
+    background: linear-gradient(180deg, rgba(19, 255, 100, 1) 0%, rgba(62, 181, 119, 1) 4%, rgba(57, 161, 58, 1) 14%, rgba(57, 161, 58, 1) 18%, rgba(57, 161, 58, 1) 22%, rgba(58, 158, 59, 1) 28%, rgba(55, 161, 56, 1) 34%, rgba(181, 124, 32, 1) 48%, rgba(148, 103, 30, 1) 60%, rgba(145, 103, 34, 1) 69%, rgba(97, 67, 19, 1) 84%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#13ff64", endColorstr="#614313", GradientType=1);
+    border: .1vmin solid black;
+    width: -webkit-fill-available;
+    height: 5vh;
+    z-index: 2;
+}
+
+.terrain {
+    background-color: #7c561a;
+    border: .1vmin solid rgb(65, 38, 7);
+    width: -webkit-fill-available;
+    height: 5vh;
+    z-index: 2;
+}
+
+.water {
+    background-color: rgb(114, 195, 216);
+    border: .1vmin solid rgb(56, 138, 206);
+    width: -webkit-fill-available;
+    height: 5vh;
+    opacity: 50%;
+    z-index: 1;
+}
+
+.player {
+    background-color: #ff0000;
+    border: .1vmin solid rgb(0, 0, 0);
+    width: -webkit-fill-available;
+    height: 5vh;
+    z-index: 2;
+}
+
+.energy,
+.points,
+.level {
+    color: white;
+    font-family: fantasy;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.above-text {
+    display: flex;
+}
