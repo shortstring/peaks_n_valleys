@@ -34,7 +34,8 @@ function main(currentTime) {
     update();
     draw();
 }
-
+alert('There are 5 levels')
+alert('Use the arrow keys to move around')
 window.requestAnimationFrame(main);
 
 function update() {
