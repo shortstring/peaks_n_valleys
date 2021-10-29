@@ -1,3 +1,3 @@
 # peaks_n_valleys
 This program is a platformer game made with javascript, html, and css.
-![image](https://user-images.githubusercontent.com/77479441/137244485-b8efd2a1-cfd5-41ab-aea8-fcd648e78878.png)
+![Animation](https://user-images.githubusercontent.com/77479441/139488065-d5454179-1a98-4652-bc50-6a083dbd6855.gif)
